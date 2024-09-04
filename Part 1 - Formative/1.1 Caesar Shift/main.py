@@ -4,11 +4,19 @@ alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 
 def caesar_encode(text, n):
-    return ""
+    new_str = ""
+    for let in text:
+        index = alpha.find(let)
+        new_str += alpha[(index + n) % 26]
+    return new_str
 
 
 def caesar_decode(text, n):
-    return ""
+    new_str = ""
+    for let in text:
+        index = alpha.find(let)
+        new_str += alpha[(index - n) % 26]
+    return new_str
 
 
 test = "HELLOWORLD"
