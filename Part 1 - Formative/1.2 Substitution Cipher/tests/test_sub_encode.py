@@ -7,4 +7,4 @@ from main import sub_encode
 
 class TestInsertString(TestCase):
     def test_insert_string_two_words_lowercase(self):
-        self.assertEqual(sub_encode("HELLOWORLD", codebet), "MXTTHAHOTU")
+        self.assertEqual(sub_encode("HELLOWORLD", "WJKUXVBMIYDTPLHZGONCRSAEFQ"), "MXTTHAHOTU")

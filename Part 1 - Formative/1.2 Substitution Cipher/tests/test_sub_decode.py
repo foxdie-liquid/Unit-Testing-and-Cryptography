@@ -7,4 +7,4 @@ from main import sub_decode
 
 class TestReverseString(TestCase):
     def test_reverse_string_one_word_lowercase(self):
-        self.assertEqual(sub_decode("MXTTHAHOTU", codebet), "HELLOWORLD")
+        self.assertEqual(sub_decode("MXTTHAHOTU", "WJKUXVBMIYDTPLHZGONCRSAEFQ"), "HELLOWORLD")
