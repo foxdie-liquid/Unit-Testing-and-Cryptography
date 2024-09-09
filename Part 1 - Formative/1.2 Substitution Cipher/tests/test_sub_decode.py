@@ -10,5 +10,5 @@ class TestReverseString(TestCase):
         self.assertEqual(sub_decode("MXTTHAHOTU", "WJKUXVBMIYDTPLHZGONCRSAEFQ"), "HELLOWORLD")
     def test_different_sub(self):
         self.assertEqual(sub_decode("MXTTHAHOTU", "ACBEDGFIHKJMLONQPSRUTWVYXZ"), "LYUUIAINUT")
-    def test_different_sub(self):
+    def test_different2_sub(self):
         self.assertEqual(sub_decode("MXTTHAHOTU", "ZYXWVUTSRQPONMLKJIHGFEDCBA"), "NCGGSZSLGF")

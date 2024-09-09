@@ -10,5 +10,5 @@ class TestInsertString(TestCase):
         self.assertEqual(sub_encode("HELLOWORLD", "WJKUXVBMIYDTPLHZGONCRSAEFQ"), "MXTTHAHOTU")
     def test_different_sub(self):
         self.assertEqual(sub_encode("HELLOWORLD", "ACBEDGFIHKJMLONQPSRUTWVYXZ"), "IDMMNVNSME")
-    def test_different_sub(self):
+    def test_different2_sub(self):
         self.assertEqual(sub_encode("HELLOWORLD", "ZYXWVUTSRQPONMLKJIHGFEDCBA"), "SVOOLDLIOW")
