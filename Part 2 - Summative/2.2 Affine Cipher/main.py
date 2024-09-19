@@ -31,7 +31,7 @@ def affine_decode(text, a, b):
     new_str = ""
     for i in range(0, len(text)):
         ind = alpha.find(text[i])
-        ind = (ind * a + b) % 26
+        ind = (ind * b - a) % 26
         new_str += alpha[ind]
     return new_str
 
