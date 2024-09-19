@@ -49,10 +49,19 @@ print(dec)
 # PART 2
 # These  are the functions you'll need to write:
 def convert_to_num(ngram):
-    return 0
+    mung = 0
+    for i in range(0, len(ngram)):
+        ind = alpha.find(ngram[i])
+        mung += ind * (26 ** i)
+    return mung
 
 def convert_to_text(num, n):
-    return ''
+    new_str = ""
+    for i in range(n):
+        remainder = num % 26
+        quotient = num // remainder
+        print(remainder)
+        print(quotient)
 
 test = "THEQUICKBROWNFOXJUMPEDOVERTHELAZYDOG"
 l = len(test)
