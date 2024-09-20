@@ -57,11 +57,13 @@ def convert_to_num(ngram):
 
 def convert_to_text(num, n):
     new_str = ""
-    for i in range(n):
+    for i in range(0, n):
+        num_temp = num // 26
         remainder = num % 26
-        quotient = num // remainder
-        print(remainder)
-        print(quotient)
+        new_str += alpha[remainder]
+        num = num_temp
+    return new_str
+
 
 test = "THEQUICKBROWNFOXJUMPEDOVERTHELAZYDOG"
 l = len(test)
