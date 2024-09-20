@@ -84,7 +84,7 @@ def affine_n_encode(text, n, a, b):
 def affine_n_decode(text, n, a, b):
     return ''
 
-test = "THEQUICKBROWNFOXJUMPEDOVERTHELAZYDOG"
+test = "THEQUICKBROWNFOXJUMPEDOVERTHELAZYDOGXXXX"
 n = 5
 a = 347
 b = 1721
