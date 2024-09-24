@@ -4,6 +4,12 @@ alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 
 def caesar_encode(text, n):
+    """
+    encodes a string using Caesar Cipher.
+    :param text: is the text to be encrypted
+    :param n: is the shift value
+    :return: returns a new text in the form of encrypted text
+    """
     new_str = ""
     for let in text:
         index = alpha.find(let)
@@ -12,6 +18,12 @@ def caesar_encode(text, n):
 
 
 def caesar_decode(text, n):
+    """
+    decodes a string using Caesar Cipher.
+    :param text: is the encrypted text to be decrypted
+    :param n: is the shift value
+    :return: returns a new text in the form of decrypted text
+    """
     new_str = ""
     for let in text:
         index = alpha.find(let)

@@ -3,6 +3,12 @@
 alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ_"
 
 def vig_encode(text, keyword):
+  """
+  uses keyword to encrypt text into a different string
+  :param text: is a string to be encoded
+  :param keyword: is a keyword that is used to encrypt text
+  :return: returns an encoded string
+  """
   new_str = ""
   for i in range(len(text)):
     ind = alpha.find(text[i]) + alpha.find(keyword[i % len(keyword)])
@@ -14,6 +20,12 @@ def vig_encode(text, keyword):
 
 
 def vig_decode(text, keyword):
+  """
+  uses keyword to decrypt text into the original string
+  :param text: is the returned string from vig_encode
+  :param keyword: is the keyword that is used to decrypt text
+  :return: returns the original string
+  """
   new_str = ""
   for i in range(len(text)):
     ind = alpha.find(text[i]) - alpha.find(keyword[i % len(keyword)])

@@ -20,6 +20,13 @@ def mod_inverse(a, m):
 
 # These are the functions you'll need to write:
 def affine_encode(text, a, b):
+    """
+    encodes a string using the Affine Cipher algorithm.
+    :param text: is the text to be encoded
+    :param a: is a value to multiply the index
+    :param b: is added onto the index * a
+    :return: returns a new string that is the encoded text
+    """
     new_str = ""
     for i in range(0, len(text)):
         ind = alpha.find(text[i])
@@ -28,6 +35,13 @@ def affine_encode(text, a, b):
     return new_str
 
 def affine_decode(text, a, b):
+    """
+    decodes a string using the Affine Cipher algorithm.
+    :param text: is the string returned from affine_encode to decode
+    :param a: is subtracted from the index * b
+    :param b: is multiplied onto the index
+    :return: returns the original text that has been decoded
+    """
     new_str = ""
     for i in range(0, len(text)):
         ind = alpha.find(text[i])
@@ -49,6 +63,11 @@ print(dec)
 # PART 2
 # These  are the functions you'll need to write:
 def convert_to_num(ngram):
+    """
+    converts ngram to an integer
+    :param ngram: a string to be converted
+    :return: returns the ngram as a integer
+    """
     mung = 0
     for i in range(0, len(ngram)):
         ind = alpha.find(ngram[i])
@@ -56,6 +75,12 @@ def convert_to_num(ngram):
     return mung
 
 def convert_to_text(num, n):
+    """
+    converts the integer returned from convert_to_num to a string
+    :param num: is the integer returned from convert_to_num
+    :param n: is the length of the string
+    :return: returns the original string that has been converted
+    """
     new_str = ""
     for i in range(0, n):
         num_temp = num // 26
